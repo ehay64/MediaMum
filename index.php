@@ -16,6 +16,34 @@
     </head>
 
     <body>
-        Hello
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer" id="title">
+                        Media Mum
+                    </div>
+                    <nav class="mdl-navigation" id="options">
+                        <!-- this is where options go -->
+                    </nav>
+                </div>
+            </header>
+
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Media Mum</span>
+                <nav class="mdl-navigation" id="function">
+
+                    <a class="mdl-navigation__link" onclick="loadFunction('films')">Films</a>
+
+                </nav>
+            </div>
+
+            <main class="mdl-layout__content">
+                <div class="page-content" style="height: 90vh;" id="content">
+                    <!-- Your content goes here -->
+                </div>
+            </main>
+
+        </div>
     </body>
 </html>
