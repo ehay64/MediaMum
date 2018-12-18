@@ -12,6 +12,26 @@
 
         <script
             type="text/javascript">
+
+            function loadFunction(func)
+            {
+                //Set the iframe
+                document.getElementById("content").innerHTML = "<iframe id=\"frame\" style=\"height: inherit;\" src=\"\"></iframe>";
+                //Clear the options bar
+                document.getElementById("options").innerHTML = "";
+
+                switch (func)
+                {
+                    case "films":
+                        //Set the title of the page
+                        document.getElementById("title").innerHTML = "Films";
+                        //Set the actual content of the page
+                        document.getElementById('frame').src = "ui/films.php";
+                        break;
+                }
+
+                return false;
+            }
         </script>
     </head>
 
