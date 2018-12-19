@@ -10,13 +10,22 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-lime.min.css" />
         <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
+        <style>
+            iframe
+            {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+
         <script
             type="text/javascript">
 
             function loadFunction(func)
             {
                 //Set the iframe
-                document.getElementById("content").innerHTML = "<iframe id=\"frame\" style=\"height: inherit;\" src=\"\"></iframe>";
+                document.getElementById("content").innerHTML = "<iframe id=\"frame\" src=\"\"></iframe>";
                 //Clear the options bar
                 document.getElementById("options").innerHTML = "";
 
@@ -59,7 +68,7 @@
             </div>
 
             <main class="mdl-layout__content">
-                <div class="page-content" style="height: 90vh;" id="content">
+                <div class="page-content" id="content">
                     <!-- Your content goes here -->
                 </div>
             </main>
