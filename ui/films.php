@@ -42,24 +42,34 @@
     <body>
         <div id="main">
 
-            <div class="film-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" style="background-color: rgb(244,67,54);">
-                    <h2 class="mdl-card__title-text" style="color: white;">My Neighbor Totoro</h2>
-                </div>
+            <?php
+                $mediaLocation = "../media/";
+                $films = preg_grep('/^([^.])/', scandir($mediaLocation));
 
-                <div class="mdl-card__media" style="background: white;">
-                    <img class="poster" src="../media/My Neighbor Totoro/image.jpg">
-                </div>
+                foreach ($films as $film)
+                {
+                    echo("
+                        <div class=\"film-card mdl-card mdl-shadow--2dp\">
+                            <div class=\"mdl-card__title\" style=\"background-color: rgb(244,67,54);\">
+                                <h2 class=\"mdl-card__title-text\" style=\"color: white;\">$film</h2>
+                            </div>
 
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Play
-                    </a>
-                </div>
+                            <div class=\"mdl-card__media\" style=\"background: white;\">
+                                <img class=\"poster\" src=\"../media/$film/image.jpg\">
+                            </div>
 
-                <div class="mdl-card__menu">
-                </div>
-            </div>
+                            <div class=\"mdl-card__actions mdl-card--border\">
+                                <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\">
+                                    Play
+                                </a>
+                            </div>
+
+                            <div class=\"mdl-card__menu\">
+                            </div>
+                        </div>
+                    ");
+                }
+            ?>
 
         </div>
     </body>
