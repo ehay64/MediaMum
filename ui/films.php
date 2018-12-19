@@ -15,6 +15,23 @@
             {
                 padding: 15px;
             }
+
+            div.film-card
+            {
+                margin: 0 auto;
+                width: inherit;
+                max-width: 512px;
+                margin-bottom: 10px;
+            }
+
+            img.poster
+            {
+                max-width: 70%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                padding: 5px 0 5px 0;
+            }
         </style>
 
         <script
@@ -25,19 +42,18 @@
     <body>
         <div id="main">
 
-            <div class="mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Welcome</h2>
+            <div class="film-card mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title" style="background-color: rgb(244,67,54);">
+                    <h2 class="mdl-card__title-text" style="color: white;">My Neighbor Totoro</h2>
                 </div>
 
-                <div class="mdl-card__supporting-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                <div class="mdl-card__media" style="background: white;">
+                    <img class="poster" src="../media/My Neighbor Totoro/image.jpg">
                 </div>
 
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                        Get Started
+                        Play
                     </a>
                 </div>
 
