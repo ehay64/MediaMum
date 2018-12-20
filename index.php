@@ -44,7 +44,7 @@
         </script>
     </head>
 
-    <body>
+    <body onload="loadFunction('films')">
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 
             <header class="mdl-layout__header">
