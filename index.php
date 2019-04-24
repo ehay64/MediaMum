@@ -37,6 +37,13 @@
                         //Set the actual content of the page
                         document.getElementById('frame').src = "ui/films.php";
                         break;
+
+                    case "youtube":
+                        //Set the title of the page
+                        document.getElementById("title").innerHTML = "Youtube";
+                        //Set the actual content of the page
+                        document.getElementById('frame').src = "ui/youtube.php";
+                        break;
                 }
 
                 return false;
@@ -63,6 +70,7 @@
                 <nav class="mdl-navigation" id="function">
 
                     <a class="mdl-navigation__link" onclick="loadFunction('films')">Films</a>
+                    <a class="mdl-navigation__link" onclick="loadFunction('youtube')">Youtube</a>
 
                 </nav>
             </div>
